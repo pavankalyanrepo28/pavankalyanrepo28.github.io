@@ -91,7 +91,7 @@ $(document).ready(function(){
 
     });
 
-
+/*
     $("#navigation li a").click(function(e) {
     	e.preventDefault();
 
@@ -99,6 +99,7 @@ $(document).ready(function(){
     	var targetPosition = $(targetElement).offset().top;
     	$("html, body").animate({ scrollTop: targetPosition - 50 }, "slow")
     });
+*/
 
 
     const nav = $("#navigation");
