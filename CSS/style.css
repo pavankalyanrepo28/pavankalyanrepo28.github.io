@@ -75,7 +75,7 @@ body {
 }
 
 .skillsSection, .contactSection {
-	background-color: #d35400;
+	background-color: #;
 	color: #fff;
 }
 
@@ -146,7 +146,7 @@ body {
 	font-size: 56px;
 	margin-bottom: 10px;
 	font-weight: 400;
-	color: #d35400;
+	color: #000;
 }
 
 .squareContent h3 {
@@ -176,7 +176,7 @@ body {
 }
 
 .contactButton:hover {
-	color: #d35400;
+	color: #000;
 	background-color: #fff;
 	text-decoration: none;
 }
@@ -195,8 +195,8 @@ body {
 }
 
 .filter .current {
-	background-color: #d35400;
-	border-color: #d35400;
+	background-color: #000;
+	border-color: #000;
 	color: #fff;
 }
 
