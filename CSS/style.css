@@ -181,6 +181,22 @@ body {
 	text-decoration: none;
 }
 
+.resumeButton {
+    color: #fff;
+    padding: 15px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    border: 1px solid #fff;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+.resumeButton:hover {
+    color: #d35400;
+    background-color: #fff;
+    text-decoration: none;
+}
+
 .filter a {
 	color: #bdc3c7;
 	border: 1px solid #bdc3c7;
