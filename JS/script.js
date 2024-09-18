@@ -1,3 +1,11 @@
+$(window).on("load", function() {
+
+    $(".loader .inner").fadeOut(750, function() {
+        $(".loader").fadeOut(1000);
+    });
+
+})
+
 $(document).ready(function(){
     // Initialize Superslides
     $('#slides').superslides({
@@ -39,21 +47,6 @@ $(document).ready(function(){
                 items: 4
             }
         }
-    });
-
-    // Initialize Isotope
-    $(window).on("load", function() {
-        $(".loader .inner").fadeOut(500, function() {
-            $(".loader").fadeOut(750);
-        });
-        $(".items").isotope({
-            filter: '*',
-            animationOptions: {
-                duration: 1500,
-                easing: 'linear',
-                queue: false
-            }
-        });
     });
 
     // Initialize EasyPieChart
