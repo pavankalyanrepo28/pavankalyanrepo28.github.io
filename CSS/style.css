@@ -1,9 +1,10 @@
 /* Navigation */
 #navigation {
-    background-color: #1e90ff; /* Modern blue */
+    background-color: #555; /* Grey background for the navbar */
     padding: 20px 10px;
     z-index: 100;
     width: 100%;
+    border-radius: 8px; /* Curved edges for the navbar */
 }
 
 #navigation li {
@@ -12,21 +13,24 @@
 
 #navigation li a {
     color: #fff;
-    font-size: 16px; /* Slightly larger font size */
-    transition: color 0.3s ease; /* Smooth color transition */
+    border-radius: 8px; /* Curved corners */
+    padding: 10px 15px; /* Padding inside the link */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
 }
 
 #navigation li a:hover {
-    color: #f0f0f0; /* Light hover color */
+    background-color: red; /* Red background on hover */
+    color: #fff; /* White text on hover */
+    border-radius: 8px; /* Ensure curved corners on hover */
 }
 
 .navbar-brand, .navbar-brand:hover {
-    color: #fff;
+    color: #fff; /* White logo text */
 }
 
 .navbar-toggler-icon {
     background: url(../img/icons/menu.png);
-    background-size: cover; /* Changed to cover for better scaling */
+    background-size: cover; /* Better scaling */
 }
 
 /* Fixed Navigation */
@@ -38,8 +42,8 @@
 /* Body */
 body {
     font-size: 15px; /* Slightly larger font size */
-    color: #333;
-    background-color: #f4f4f4; /* Light grey background */
+    color: #fff; /* White text */
+    background-color: #000; /* Black background */
     letter-spacing: 0.5px; /* Reduced letter spacing for readability */
 }
 
@@ -79,7 +83,7 @@ body {
 .titleMessage {
     position: absolute;
     width: 100%;
-    height: 300px; /* Increased height for more emphasis */
+    height: 300px; /* Increased height */
     top: 50%;
     z-index: 5;
     text-align: center;
@@ -87,23 +91,32 @@ body {
 }
 
 .titleMessage .heading p {
-    color: #fff;
+    color: #fff; /* White text */
     text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5); /* Slightly darker shadow */
     font-weight: 300; /* Lighter font weight */
     letter-spacing: 5px; /* Reduced letter spacing */
 }
 
+.aboutImage {
+    width: 100%; /* Adjust width as needed */
+    border-radius: 15px; /* Adjust curvature with pixel value */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: adds a shadow for a more polished look */
+}
+
 .titleMessage .heading .main {
     font-size: 48px; /* Larger main heading */
+    color: #fff; /* White text */
 }
 
 .titleMessage .heading .sub {
     font-size: 24px; /* Larger subheading */
+    color: #fff; /* White text */
 }
 
 /* Sections */
 .section {
-    padding: 80px 0; /* Reduced padding for a more compact look */
+    padding: 80px 0; /* Reduced padding */
+    color: #fff; /* White text */
 }
 
 /* About Image */
@@ -116,12 +129,13 @@ body {
 .col-md-7 {
     text-align: justify;
     text-align-last: left;
+    color: #fff; /* White text */
 }
 
 /* Skills and Contact Sections */
 .skillsSection, .contactSection {
-    background-color: #1e90ff; /* Modern blue */
-    color: #fff;
+    background-color: #555; /* Grey background */
+    color: #fff; /* White text */
 }
 
 /* Skill Charts */
@@ -145,7 +159,7 @@ body {
 }
 
 .chart .percent {
-    color: #fff;
+    color: #fff; /* White percentage text */
     line-height: 160px;
     display: inline-block;
     font-size: 40px; /* Larger font size */
@@ -156,8 +170,14 @@ body {
 }
 
 /* Square Items */
+
+.statsSection {
+    padding: 120px 0; /* Adjust padding for top and bottom space */
+}
+
 .squareItem {
-    margin-top: 30px;
+    margin-top: 60px;
+    margin-bottom: 60px;
     position: relative;
 }
 
@@ -165,7 +185,7 @@ body {
     position: relative;
     padding: 60px 20px 40px; /* Increased padding */
     text-align: center;
-    border: 2px solid #333; /* Darker border */
+    border: 2px solid #fff; /* White border */
     border-top: none;
 }
 
@@ -175,7 +195,7 @@ body {
     position: absolute;
     top: 0;
     width: 30%;
-    border-bottom: 2px solid #333; /* Darker border */
+    border-bottom: 2px solid #fff; /* White border */
 }
 
 .squareInnerContainer:before {
@@ -190,13 +210,14 @@ body {
     font-size: 60px; /* Larger heading size */
     margin-bottom: 10px;
     font-weight: 400;
-    color: #1e90ff; /* Modern blue */
+    color: #fff; /* White heading */
 }
 
 .squareContent h3 {
     font-size: 14px; /* Larger font size */
     font-weight: 600;
     margin: 0;
+    color: #ddd; /* Lighter text */
 }
 
 /* Icons */
@@ -208,41 +229,27 @@ body {
     height: 60px;
     font-size: 50px; /* Larger icon size */
     margin-left: -25%;
-    color: #333; /* Darker color for icons */
+    color: red; /* White icon color */
 }
 
 /* Contact and Resume Buttons */
-.contactButton, .resumeButton {
-    color: #fff;
+.contactButton, .resumeButton, .filter a {
+    color: #fff; /* Default text color */
     padding: 15px 25px; /* Larger padding */
     display: inline-block;
     margin-top: 20px;
-    border: 1px solid #fff;
+    border: 1px solid #fff; /* White border */
     border-radius: 4px; /* Rounded corners */
     text-decoration: none;
     transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
 }
 
-.contactButton:hover, .resumeButton:hover {
-    color: #1e90ff; /* Modern blue */
-    background-color: #fff;
+.contactButton:hover, .resumeButton:hover, .filter a:hover {
+    background-color: red; /* Red background on hover */
+    color: #fff; /* White text on hover */
 }
 
 /* Filter */
-.filter a {
-    color: #bdc3c7;
-    border: 1px solid #bdc3c7;
-    padding: 12px 20px;
-    display: block;
-    text-decoration: none;
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
-}
-
-.filter a:hover {
-    background-color: #1e90ff; /* Modern blue */
-    border-color: #1e90ff;
-    color: #fff;
-}
 
 .filter li {
     display: inline-block;
@@ -250,9 +257,9 @@ body {
 }
 
 .filter .current {
-    background-color: #1e90ff; /* Modern blue */
-    border-color: #1e90ff;
-    color: #fff;
+    background-color: red; /* White background */
+    border-color: #fff; /* White border */
+    color: #fff; /* Black text */
 }
 
 /* Section Heading */
@@ -260,104 +267,143 @@ body {
     text-align: center;
     padding-bottom: 50px; /* Increased padding */
     width: 100%;
+    color: #fff; /* White text */
 }
 
 /* Items */
+/* Items Container */
+.itemsContainer {
+    width: 100%;
+}
+
+/* List Items */
 .items li {
     display: inline-block;
     padding: 5px;
 }
 
-.itemsContainer {
-    width: 100%;
-}
-
+/* Item Image */
 .items li img {
     width: 100%;
-    transition: transform 0.3s ease; /* Smooth scaling */
+    transition: transform 0.3s ease; /* Smooth scaling effect */
 }
 
+/* Item Wrapper */
 .items .item {
     position: relative;
     display: block;
     overflow: hidden;
 }
 
+/* Icons Container */
 .items .icons {
+    opacity: 0;
+    transition: opacity 0.3s ease;
     position: absolute;
-    width: 100px;
+    width: 130px;
     height: 50px;
     left: 50%;
     top: 50%;
-    margin: -25px auto 0 -50px;
+    justify-content: space-around;
+    align-items: center;
+    margin: -25px 0 0 -60px; /* Center the icons horizontally and vertically */
     text-align: center;
+    display: flex; /* Added for layout */
     z-index: 3;
 }
 
-.items .icons i {
-    color: #fff;
-    font-size: 24px; /* Larger icon size */
-    margin-top: 10px;
+.items .item:hover .icons {
+    opacity: 1; /* Show icons on hover */
 }
 
-.items a {
+/* Icon Styling */
+.items .icons i {
+    color: #fff; /* Black icons by default */
+    font-size: 24px; /* Icon size */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.items .icons a {
+    display: inline-block;
     width: 50px;
     height: 50px;
-    background-color: #1e90ff; /* Modern blue */
-    position: relative;
-    display: inline-block;
-    transition: background-color 0.3s ease; /* Smooth transitions */
+    background-color: #000; /* White button background */
+    text-decoration: none; /* Remove underline */
+    line-height: 50px; /* Center icon vertically */
+    transition: background-color 0.3s ease, color 0.3s ease; 
 }
 
+/* Icons on Hover */
+.items .icons a:hover i {
+    color: #fff; /* White icons on hover */
+}
+
+.items .icons a:hover {
+    background-color: red; /* Black background on hover */
+}
+
+/* Overlay */
 .items .imageOverlay {
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.5); /* White overlay */
     position: absolute;
     left: 0;
     top: 0;
     opacity: 0;
-    transition: opacity 0.3s ease; /* Smooth transitions */
+    transition: opacity 0.3s ease; /* Smooth transition */
 }
 
 .items .item:hover .imageOverlay {
-    opacity: 1;
+    opacity: 1; /* Show overlay on hover */
 }
 
+/* Open Button */
 .items .openButton {
-    float: left;
-    left: -220px; /* Adjusted for new size */
+    position: absolute;
+    left: 20px; /* Adjust positioning */
+    top: 50%;
+    transform: translateY(-50%); /* Center vertically */
+    z-index: 4;
 }
 
+/* Project Link */
 .items .projectLink {
-    float: right;
-    right: -220px; /* Adjusted for new size */
+    position: absolute;
+    right: 20px; /* Adjust positioning */
+    top: 50%;
+    transform: translateY(-50%); /* Center vertically */
+    z-index: 4;
 }
 
+/* Hover Effects */
 .items .item:hover .projectLink {
-    right: 0;
+    right: 10px; /* Adjust position on hover */
 }
 
 .items .item:hover .openButton {
-    left: 0;
+    left: 10px; /* Adjust position on hover */
 }
 
-.items .items:hover img {
-    transform: scale(1.05);
+/* Image Scaling on Hover */
+.items li:hover img {
+    transform: scale(1.05); /* Slightly zoom image on hover */
 }
 
+/* Reset padding */
 .items {
     padding: 0;
 }
 
 /* Copyright Section */
 .copyrightSection {
-    background-color: #333; /* Darker background */
-    color: #fff;
+    background-color: #111; /* Darker background */
+    color: #fff; /* White text */
     padding: 30px 10px; /* Adjusted padding */
     text-align: center;
 }
 
 .copyrightSection p {
     margin: 0;
+    color: #ddd; /* Lighter text */
 }
